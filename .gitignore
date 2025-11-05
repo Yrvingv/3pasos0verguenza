@@ -1,0 +1,29 @@
+@"
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+
+# Env
+.env
+.env.*.local
+!.env.example
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python (si llegas a usar)
+.venv/
+__pycache__/
+"@ | Set-Content -Encoding UTF8 .gitignore
