@@ -101,7 +101,7 @@ const Hero = () => {
                 href={HOTMART}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-4 text-white text-base md:text-lg font-semibold shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200"
+                className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-white text-base md:text-lg font-semibold shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200"
               >
                 Quiero la guía ahora
               </a>

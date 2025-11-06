@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/3pasos0verguenza/',   // <- ESTE es el correcto para https://yrvingv.github.io/3pasos0verguenza/
+  base: process.env.NODE_ENV === 'production' ? '/3pasos0verguenza/' : '/'
 })

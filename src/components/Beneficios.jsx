@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; // usa HeroIcons (opcional)
 
+
 const beneficios = [
   "El plan que me ayudó a eliminar las verrugas del cuello y de la parte genital.",
   "Qué tratamientos probé y por qué no funcionaron.",

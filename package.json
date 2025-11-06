@@ -1,7 +1,7 @@
 {
-  "name": "agilfy-cotizador-landing-ux",
+  "name": "3pasos0verguenza",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
-    "@vitejs/plugin-react": "^5.0.3",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^3.4.18",
     "vite": "^5.4.10"
   }
 }
