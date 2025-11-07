@@ -24,18 +24,24 @@ async function irAPago(e) {
 const COPIES = [
   [
     "Rechazo en la cama.",
-    <span key="c1b" className="text-blue-700">Excusas, miradas, distancia.</span>,
-    "Las verrugas arruinan tu intimidad."
+    <span key="c1b" className="text-blue-700">
+      Excusas, miradas, distancia.
+    </span>,
+    "Las verrugas arruinan tu intimidad.",
   ],
   [
     "Verrugas que vuelven.",
-    <span key="c2b" className="text-blue-700">Vergüenza que no te deja vivir.</span>,
-    "Miedo a que te vean."
+    <span key="c2b" className="text-blue-700">
+      Vergüenza que no te deja vivir.
+    </span>,
+    "Miedo a que te vean.",
   ],
   [
     "Ansiedad cada ducha.",
-    <span key="c3b" className="text-blue-700">Evitas médicos, evitas espejos.</span>,
-    "¿Y si nunca se van? y si se convierte en cancer?"
+    <span key="c3b" className="text-blue-700">
+      Evitas médicos, evitas espejos.
+    </span>,
+    "¿Y si nunca se van? y si se convierte en cancer?",
   ],
 ];
 
@@ -46,7 +52,9 @@ const Hero = () => {
   const [idx, setIdx] = useState(0);
   const [fading, setFading] = useState(false);
   const prefersReduced = useMemo(
-    () => typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches,
+    () =>
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches,
     []
   );
 
@@ -64,7 +72,10 @@ const Hero = () => {
 
   return (
     <section className="relative bg-white">
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 h-48 bg-gradient-to-b from-blue-50 to-transparent" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 -top-24 h-48 bg-gradient-to-b from-blue-50 to-transparent"
+      />
 
       <div className="mx-auto max-w-6xl px-4 md:px-8 py-16 md:py-20">
         <div className="grid items-center gap-10 md:grid-cols-2">
@@ -86,13 +97,16 @@ const Hero = () => {
               {COPIES[idx].map((line, i) => (
                 <React.Fragment key={i}>
                   {line}
-                  {i < COPIES[idx].length - 1 && <br className="hidden sm:block" />}
+                  {i < COPIES[idx].length - 1 && (
+                    <br className="hidden sm:block" />
+                  )}
                 </React.Fragment>
               ))}
             </h1>
 
             <p className="mt-5 max-w-xl text-lg text-gray-600">
-              Frenalo hoy con un plan claro, anónimo y directo. Una guía basada en experiencia real + respaldo médico.
+              Frenalo hoy con un plan claro, anónimo y directo. Una guía basada
+              en experiencia real + respaldo médico.
             </p>
 
             {/* CTAs */}
@@ -115,20 +129,44 @@ const Hero = () => {
 
             <ul className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500">
               <li className="flex items-center gap-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" className="text-blue-600">
-                  <path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  className="text-blue-600"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
                 </svg>
                 Descarga inmediata (PDF)
               </li>
               <li className="flex items-center gap-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" className="text-blue-600">
-                  <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  className="text-blue-600"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+                  />
                 </svg>
                 Compra anónima
               </li>
               <li className="flex items-center gap-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" className="text-blue-600">
-                  <path fill="currentColor" d="M12 8a4 4 0 100 8 4 4 0 000-8zm8-5H4a2 2 0 00-2 2v14a2 2 0 002 2h16a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  className="text-blue-600"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 8a4 4 0 100 8 4 4 0 000-8zm8-5H4a2 2 0 00-2 2v14a2 2 0 002 2h16a2 2 0 002-2V5a2 2 0 00-2-2z"
+                  />
                 </svg>
                 Sin registro ni datos personales
               </li>
@@ -142,7 +180,10 @@ const Hero = () => {
                 controls
                 poster={`${import.meta.env.BASE_URL}crio1-poster.jpg`}
               >
-                <source src={`${import.meta.env.BASE_URL}crio1.mp4`} type="video/mp4" />
+                <source
+                  src={`${import.meta.env.BASE_URL}crio1.mp4`}
+                  type="video/mp4"
+                />
                 Tu navegador no soporta video.
               </video>
             </div>

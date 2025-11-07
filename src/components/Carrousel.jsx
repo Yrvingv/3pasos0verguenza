@@ -1,9 +1,20 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
+// Archivos en /public (no anteponer "public/")
+const FILES = [
+  "verruga1.jpg",
+  "verruga2.jpeg",
+  "verruga3.jpeg",
+  "verruga4.jpeg",
+  "verruga5.jpeg",
+  "verruga4.jpeg",
+  "verruga6.jpeg",
+  "verruga7.jpeg",
+  "verruga8.jpeg",
+];
 
-// Archivos en /public (sin "public/")
-const FILES = ["verruga1.jpg", "verruga2.jpeg", "verruga3.jpeg", "verruga4.jpeg", "verruga5.jpeg", "verruga4.jpeg", "verruga6.jpeg", "verruga7.jpeg", "verruga8.jpeg"];
+// 👉 Prefijo robusto según entorno (dev: "/" | prod GH Pages: "/3pasos0verguenza/")
 const slides = FILES.map((f) => `${import.meta.env.BASE_URL}${f}`);
 
 const Carousel = () => {
